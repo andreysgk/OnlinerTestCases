@@ -17,8 +17,7 @@ public class BaseTest{
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         ChromeDriver driver = new ChromeDriver(options);
-//        driver.get("https://www.onliner.by/");
-        driver.get("https://catalog.onliner.by/mobile/samsung/sma525fzkdser");
+        driver.get("https://www.onliner.by/");
         driver.manage().window().maximize();
         pageManager = new PageManager(driver);
     }

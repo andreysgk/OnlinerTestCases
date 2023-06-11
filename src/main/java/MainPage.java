@@ -21,6 +21,7 @@ public class MainPage extends Base{
         return this;
     }
     public MainPage clickOnProduct(){
+        waitVisibility(firstProductLocator);
         driver.findElement(firstProductLocator).click();
         return this;
     }
