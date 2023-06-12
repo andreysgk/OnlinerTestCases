@@ -50,12 +50,12 @@ public class TestCases extends BaseTest{
                 .clickOnProduct();
         pageManager.catalogPageTest.firstButtonAddToCart(0)
                 .clickButtonGoToCart();
-        Assertions.assertEquals("Корзина", pageManager.cartPageTest.getNameTittleCart());
-        Assertions.assertEquals("Samsung Galaxy A52 SM-A525F/DS 4GB/128GB (черный)", pageManager.cartPageTest.getNameAddedProduct());
+            Assertions.assertEquals("Корзина", pageManager.cartPageTest.getNameTittleCart());
+            Assertions.assertEquals("Samsung Galaxy A52 SM-A525F/DS 4GB/128GB (черный)", pageManager.cartPageTest.getNameAddedProduct());
         pageManager.cartPageTest.cursorOverTheProduct()
                 .deleteIconButton()
                 .closeButton();
-        Assertions.assertEquals("Ваша корзина пуста", pageManager.cartPageTest.messageYourShoppingCartIsEmpty());
+            Assertions.assertEquals("Ваша корзина пуста", pageManager.cartPageTest.messageYourShoppingCartIsEmpty());
     }
 
 }
